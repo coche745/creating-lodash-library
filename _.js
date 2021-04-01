@@ -102,34 +102,35 @@ const _ = {
       }
   };
 
-// erase the // before each console.log to see how each method of our library works!
+console.log('These are all of the methods in use!');
   
 /* clamp takes in a number, an upper, and a lower bound. Returns lower if number less than lower. Returns upper
 if number greater than upper. Returns number as is if number between upper and lower. */
-    console.log(_.clamp(5, 6, 9));
-    console.log(_.clamp(7, 6, 9));
+    console.log('_.clamp(5, 6, 9): ', _.clamp(5, 6, 9));
+    console.log('_.clamp(7, 6, 9): ', _.clamp(7, 6, 9));
 
 /* inRange takes in a number, a start value, and an end value. Returns true if number between start and end.
 Returns false if number less than start or greater than or equal to end. If start is greater than end, start
 and end are swapped. */
-    // console.log(_.inRange(4, 3, 8));
+    console.log('_.inRange(4, 3, 8): ', _.inRange(4, 3, 8));
 
 /* words takes in a string and creates an array of the words from that string. */
-    //console.log(_.words('This is a sentence'));
+    console.log("_.words('This is a sentence'): ", _.words('This is a sentence'));
 
 /* pad takes in a string and a number, and adds spaces to the beginning and end of the string until the amount
 of characters in the string matches the number */
-    // console.log(_.pad('hello', 8));
-    // console.log(_.pad('hello', 15));
+    console.log("_.pad('hello', 8): ", _.pad('hello', 8));
+    console.log("_.pad('hello', 15): ", _.pad('hello', 15));
 
 /* has takes in an object and a key and checks to see whether the object has a value at that key. Returns true 
 if there is a value at the key and false if there is not */
-    let obj = {1: 'weightlifting', 2: 'cardio', 3: 'calisthenics', 4: ''};
-    // console.log(_.has(obj, 3));
-    // console.log(_.has(obj, 4));
+    let myObj = {1: 'weightlifting', 2: 'cardio', 3: 'calisthenics', 4: ''};
+    console.log('myObj: ', myObj);
+    console.log('_.has(myObj, 3): ', _.has(myObj, 3));
+    console.log('_.has(myObj, 4): ', _.has(myObj, 4));
 
 /* invert takes in an object and swaps each key with its value. */
-    // console.log(_.invert(obj));
+    console.log('_.invert(myObj): ', _.invert(myObj));
 
 /* findKey takes in an object and a function and calls the function on each value of the object. findKey 
 returns the first key that contains a value that makes the function return true. If the function returns false 
@@ -140,13 +141,14 @@ for all the values in the object, then findKey will return undefined. */
     let powerliftingFinder = (str) => {
         return str === 'powerlifting';
     }
-    // console.log(_.findKey(obj, cardioFinder));
-    // console.log(_.findKey(obj, powerliftingFinder));
+    console.log('_.findKey(myObj, cardioFinder): ', _.findKey(myObj, cardioFinder));
+    console.log('_.findKey(myObj, powerliftingFinder): ', _.findKey(myObj, powerliftingFinder));
 
 /* drop takes in an array and a number, and takes out from the beginning of the array the amount of elements 
 specified by number. If no number is supplied, number = 1*/
-    const arr = [1, 2, 3, 4, 5, 6, 7, 8];
-    // console.log(_.drop(arr, 4));
+    const myArr = [1, 2, 3, 4, 5, 6, 7, 8];
+    console.log('myArr: ', myArr);
+    console.log('_.drop(myArr, 4): ', _.drop(myArr, 4));
 
 /* dropWhile takes in an array and a function, and calls the function on each element of the array. dropWhile 
 drops elements from the beginning of the array until the function returns false, then returns the remaining 
@@ -155,12 +157,12 @@ array*/
     let myFunction = (i, index, arr) => {
         return i < 7;
     }
-    // console.log(_.dropWhile(arr, myFunction));
+    console.log('_.dropWhile(myArr, myFunction): ', _.dropWhile(myArr, myFunction));
 
 /* chunk takes in an array and a size and breaks up the array into arrays of the specified size. chunk returns 
 and array of these array chunks. If the array can't be broken up evenly, the last array chunk will be smaller 
 than the specified size. If no size is supplied, size = 1. */
-    // console.log(_.chunk([1, 2, 3, 4, 5], 2));
+    console.log('_.chunk([1, 2, 3, 4, 5], 2): ', _.chunk([1, 2, 3, 4, 5], 2));
 
  
 
