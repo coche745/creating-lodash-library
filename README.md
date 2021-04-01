@@ -14,3 +14,5 @@ You can see examples of each method in use by running the project on your own co
 ## Setup
 To run this project, install it locally using git
 + git clone https://github.com/coche745/creating-lodash-library
+## Status
+Project is: finished
