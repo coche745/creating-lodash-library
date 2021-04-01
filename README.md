@@ -3,6 +3,7 @@
 + General Info
 + Technologies
 + Setup
++ Status
 ## General Info
 Implementation of some of the most exciting funcionality from the widely-popular lodash.js library which provides many methods that add new functionality for numbers, strings, objects, and arrays.
 
