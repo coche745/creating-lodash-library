@@ -1,4 +1,6 @@
 const _ = {
+/* clamp takes in a number, an upper, and a lower bound. Returns lower if number less than lower. Returns upper
+if number greater than upper. Returns number as is if number between upper and lower. */
     clamp (num, lower, upper) {
         let value = Math.max(num, lower);
         value = Math.min(value, upper);
@@ -118,12 +120,12 @@ and end are swapped. */
     console.log("_.words('This is a sentence'): ", _.words('This is a sentence'));
 
 /* pad takes in a string and a number, and adds spaces to the beginning and end of the string until the amount
-of characters in the string matches the number */
+of characters in the string matches the number. */
     console.log("_.pad('hello', 8): ", _.pad('hello', 8));
     console.log("_.pad('hello', 15): ", _.pad('hello', 15));
 
 /* has takes in an object and a key and checks to see whether the object has a value at that key. Returns true 
-if there is a value at the key and false if there is not */
+if there is a value at the key and false if there is not. */
     let myObj = {1: 'weightlifting', 2: 'cardio', 3: 'calisthenics', 4: ''};
     console.log('myObj: ', myObj);
     console.log('_.has(myObj, 3): ', _.has(myObj, 3));
@@ -145,14 +147,14 @@ for all the values in the object, then findKey will return undefined. */
     console.log('_.findKey(myObj, powerliftingFinder): ', _.findKey(myObj, powerliftingFinder));
 
 /* drop takes in an array and a number, and takes out from the beginning of the array the amount of elements 
-specified by number. If no number is supplied, number = 1*/
+specified by number. If no number is supplied, number = 1.*/
     const myArr = [1, 2, 3, 4, 5, 6, 7, 8];
     console.log('myArr: ', myArr);
     console.log('_.drop(myArr, 4): ', _.drop(myArr, 4));
 
 /* dropWhile takes in an array and a function, and calls the function on each element of the array. dropWhile 
 drops elements from the beginning of the array until the function returns false, then returns the remaining 
-array*/
+array.*/
 
     let myFunction = (i, index, arr) => {
         return i < 7;
