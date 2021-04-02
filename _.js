@@ -104,9 +104,9 @@ remaining array.*/
         return newArr;*/
     },
 
-/* chunk takes in an array and a size and breaks up the array into arrays of the specified size. chunk returns 
-and array of these array chunks. If the array can't be broken up evenly, the last array chunk will be smaller 
-than the specified size. If no size is supplied, size = 1. */
+/* .chunk() takes in an array and a size and breaks up the array into arrays of the specified size. .chunk()
+returns an array of these array chunks. If the array can't be broken up evenly, the last array chunk will be
+smaller than the specified size. If no size is supplied, size = 1. */
     chunk (array, size) {
         if (! size) {
             let size = 1;
