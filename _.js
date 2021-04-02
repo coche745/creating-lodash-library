@@ -1,5 +1,5 @@
 const _ = {
-/* clamp takes in a number, an upper, and a lower bound. Returns lower if number less than lower. Returns upper
+/* .clamp() takes in a number, an upper, and a lower bound. Returns lower if number less than lower. Returns upper
 if number greater than upper. Returns number as is if number between upper and lower. */
     clamp (num, lower, upper) {
         let value = Math.max(num, lower);
