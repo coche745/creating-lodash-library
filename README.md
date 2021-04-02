@@ -2,6 +2,7 @@
 ## Table of Contents
 + General Info
 + Technologies
++ Features
 + Setup
 + Status
 ## General Info

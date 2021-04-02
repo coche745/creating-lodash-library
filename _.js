@@ -132,25 +132,25 @@ than the specified size. If no size is supplied, size = 1. */
     }
 };
 
-console.log('These are all of the methods in use!');
+console.log('\nThese are all of the methods in use!');
   
-console.log('_.clamp(5, 6, 9): ', _.clamp(5, 6, 9));
+console.log('\n_.clamp(5, 6, 9): ', _.clamp(5, 6, 9));
 console.log('_.clamp(7, 6, 9): ', _.clamp(7, 6, 9));
 
-console.log('_.inRange(4, 3, 8): ', _.inRange(4, 3, 8));
+console.log('\n_.inRange(4, 3, 8): ', _.inRange(4, 3, 8));
 
 
-console.log("_.words('This is a sentence'): ", _.words('This is a sentence'));
+console.log("\n_.words('This is a sentence'): ", _.words('This is a sentence'));
 
-console.log("_.pad('hello', 8): ", _.pad('hello', 8));
+console.log("\n_.pad('hello', 8): ", _.pad('hello', 8));
 console.log("_.pad('hello', 15): ", _.pad('hello', 15));
 
 let myObj = {1: 'weightlifting', 2: 'cardio', 3: 'calisthenics', 4: ''};
-console.log('myObj: ', myObj);
+console.log('\nmyObj: ', myObj);
 console.log('_.has(myObj, 3): ', _.has(myObj, 3));
 console.log('_.has(myObj, 4): ', _.has(myObj, 4));
 
-console.log('_.invert(myObj): ', _.invert(myObj));
+console.log('\n_.invert(myObj): ', _.invert(myObj));
 
 let cardioFinder = (str) => {
     return str === 'cardio';
@@ -158,20 +158,20 @@ let cardioFinder = (str) => {
 let powerliftingFinder = (str) => {
     return str === 'powerlifting';
 }
-console.log('_.findKey(myObj, cardioFinder): ', _.findKey(myObj, cardioFinder));
+console.log('\n_.findKey(myObj, cardioFinder): ', _.findKey(myObj, cardioFinder));
 console.log('_.findKey(myObj, powerliftingFinder): ', _.findKey(myObj, powerliftingFinder));
 
 const myArr = [1, 2, 3, 4, 5, 6, 7, 8];
-console.log('myArr: ', myArr);
+console.log('\nmyArr: ', myArr);
 console.log('_.drop(myArr, 4): ', _.drop(myArr, 4));
 
 
 let myFunction = (i, index, arr) => {
     return i < 7;
 }
-console.log('_.dropWhile(myArr, myFunction): ', _.dropWhile(myArr, myFunction));
+console.log('\n_.dropWhile(myArr, myFunction): ', _.dropWhile(myArr, myFunction));
 
-console.log('_.chunk([1, 2, 3, 4, 5], 2): ', _.chunk([1, 2, 3, 4, 5], 2));
+console.log('\n_.chunk([1, 2, 3, 4, 5], 2): ', _.chunk([1, 2, 3, 4, 5], 2));
 
  
 
