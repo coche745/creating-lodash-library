@@ -7,7 +7,7 @@ if number greater than upper. Returns number as is if number between upper and l
         return value;
     },
 
-/* inRange takes in a number, a start value, and an end value. Returns true if number between start and end.
+/* .inRange() takes in a number, a start value, and an end value. Returns true if number between start and end.
 Returns false if number less than start or greater than or equal to end. If start is greater than end, start
 and end are swapped. */
     inRange (num, start, end) {
@@ -23,12 +23,12 @@ and end are swapped. */
         return (num >= start && num < end);
     },
 
-/* words takes in a string and creates an array of the words from that string. */
+/* .words() takes in a string and creates an array of the words from that string. */
     words (str) {
         let arr = str.split(' ');
         return arr;
       },
-/* pad takes in a string and a number, and adds spaces to the beginning and end of the string until the amount
+/* .pad() takes in a string and a number, and adds spaces to the beginning and end of the string until the amount
 of characters in the string matches the number. */
     pad (str, len) {
         if (len <= str.length) {
@@ -48,7 +48,7 @@ of characters in the string matches the number. */
         return str;
     },
 
-/* has takes in an object and a key and checks to see whether the object has a value at that key. Returns true 
+/* .has() takes in an object and a key and checks to see whether the object has a value at that key. Returns true 
 if there is a value at the key and false if there is not. */
     has (obj, key) {
         if (obj[key]) {
@@ -58,7 +58,7 @@ if there is a value at the key and false if there is not. */
         }
     },
 
-/* invert takes in an object and swaps each key with its value. */
+/* .invert() takes in an object and swaps each key with its value. */
     invert (obj) {
         let newObj = {}
         for (let i in obj) {
@@ -67,9 +67,9 @@ if there is a value at the key and false if there is not. */
         return newObj;
     },
 
-/* findKey takes in an object and a function and calls the function on each value of the object. findKey 
+/* .findKey() takes in an object and a function and calls the function on each value of the object. .findKey() 
 returns the first key that contains a value that makes the function return true. If the function returns false 
-for all the values in the object, then findKey will return undefined. */
+for all the values in the object, then .findKey() will return undefined. */
     findKey (obj, func) {
         for (i in obj) {
             calling = func(obj[i]);
@@ -79,7 +79,7 @@ for all the values in the object, then findKey will return undefined. */
         }
     },
 
-/* drop takes in an array and a number, and takes out from the beginning of the array the amount of elements 
+/* .drop() takes in an array and a number, and takes out from the beginning of the array the amount of elements 
 specified by number. If no number is supplied, number = 1.*/
     drop (arr, num) {
         if (!num) {
@@ -89,9 +89,9 @@ specified by number. If no number is supplied, number = 1.*/
         return arr;
     },
 
-/* dropWhile takes in an array and a function, and calls the function on each element of the array. dropWhile 
-drops elements from the beginning of the array until the function returns false, then returns the remaining 
-array.*/
+/* .dropWhile() takes in an array and a function, and calls the function on each element of the array. 
+.dropWhile() drops elements from the beginning of the array until the function returns false, then returns the 
+remaining array.*/
     dropWhile (arr, predicate) {
         while (predicate(arr[0], 0, arr) === true) {
             arr.splice(0, 1);
